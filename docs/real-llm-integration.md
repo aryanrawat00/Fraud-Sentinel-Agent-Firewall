@@ -40,9 +40,8 @@ Gemini is also available as an explicitly selected provider. See
 configuration and Responses API behavior below remain unchanged.
 
 The isolated launcher reads process environment through `LLMSettings`, following the
-existing Pydantic settings conventions. It does not load or modify `.env`. The safe
-reference file is [llm-provider.env.example](llm-provider.env.example); it is not loaded
-automatically and contains no credential.
+existing Pydantic settings conventions. It does not load or modify `.env`. The table
+below lists the supported environment variables and their defaults.
 
 `configured=false` for the OpenAI provider means its effective API key is missing or
 blank; the provider and model may still be correctly selected. Only
